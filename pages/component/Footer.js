@@ -1,5 +1,5 @@
 import Link from "next/link"
-import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
+// import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
 
 
 const SocialLink = ({ children, ...props }) => {
