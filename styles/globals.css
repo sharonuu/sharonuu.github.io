@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Baloo;
+  src: url("../public/fonts/baloo/regular.ttf");
+  /* font-display: swap; */
+}
+
+@font-face {
+  font-family: Somatic;
+  src: url("../public/fonts/somatic/regular.otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  font-weight: 300;
+  src: url("../public/fonts/comfortaa/light.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  font-weight: 400;
+  src: url("../public/fonts/comfortaa/regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Comfortaa;
+  font-weight: 700;
+  src: url("../public/fonts/comfortaa/bold.ttf");
+  font-display: swap;
+}
+
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 1.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.body-fadeIn {
+  animation: fadeInDown 1s;
+}
+
+.body-fadeOut {
+  animation: fadeOutDown 1s;
+}
+
+* {
+  scroll-behavior: smooth;
+  @apply box-border;
+}
+
+/* ::selection {
+  @apply bg-green-500 bg-blend-difference text-white;
+}
+
+::-moz-selection {
+  @apply bg-green-300 bg-blend-difference text-white;
+} */
+
+
+html,
+body {
+  @apply overflow-x-hidden;
+}
