@@ -17,6 +17,7 @@ const SocialLink = ({ children, ...props }) => {
 
 export default function Footer() {
     return (
+        // <section id="contact" className="relative w-full bg-gradient-to-b from-theme-blue-medium to-theme-blue-dark">
         <footer id="footer" className="relative pt-40 md:pt-56 overflow-hidden">
         <section id="content" className=" w-full z-50">
                 <div className="relative container w-full h-full flex flex-col justify-end items-center z-50 mx-auto space-y-8 py-10">
@@ -26,7 +27,7 @@ export default function Footer() {
                         style={{ background: "linear-gradient(91.13deg, #57A773 0%, #157145 100%)" }}
                         data-aos="flipInX">
                         <div className="space-y-4 text-center lg:text-left">
-                            <h1 className="font-baloo text-4xl">I’m available for every opportunity!</h1>
+                            <h1 className="font-baloo text-4xl">I&apos;m available for every opportunity!</h1>
                             <p className="font-comfortaa text-sm leading-6">Interested in working with me? Need help on your project? Or just wanna say hi? I’d love to hear you about that.</p>
                         </div>
 
@@ -103,5 +104,6 @@ export default function Footer() {
         {/* <img src={Images.SeaFloor} className="absolute bottom-0 left-0 object-cover h-full min-w-full object-left z-20" alt="" /> */}
     {/* </section> */}
     </footer>
+    // <section/>
     )
 }

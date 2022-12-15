@@ -31,11 +31,11 @@ export default function Home() {
               Hi There!{" "}
               <span className="wave">👋🏻</span>
           </h1>
-          <h2 className='text-5xl py-2 text-yellow-500 font-media font-baloo' data-aos="fadeIn">I'm Shuoni Xu</h2>
+          <h2 className='text-5xl py-2 text-yellow-500 font-media font-baloo' data-aos="fadeIn">I&apos;m Shuoni Xu</h2>
           <h3 className='text-2xl py-2 font-light font-comfortaa' data-aos="fadeIn">A full stack developer, designer and photographer.</h3>
           <Link prefetch href="#about" passHref={true}>
             <button className='btn bg-yellow-500 text-white mt-8 rounded-full px-6 py-3 font-baloo' data-aos="fadeIn">
-              <span className="bg-theme-green-light">"Who are you?"</span>
+              <span className="bg-theme-green-light">&quot;Who are you?&quot;</span>
             </button>
           </Link>
           </div>
@@ -53,21 +53,25 @@ export default function Home() {
                       
                     
                         <h1 className="font-baloo text-6xl" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                            It's me here
+                            It&apos;s me here
                         </h1>
                         <p className="font-comfortaa text-base font-regular leading-7" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                            I'm Shuoni, you are also call me Sharon. Born and raised in China and currently, I am an Electrical and Computer Engineering student at University of Waterloo. 
-                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I'm also pretty into photography, espically street photogrpahy.
+                            I&apos;m Shuoni, you are also call me Sharon. Born and raised in China and currently live in Ontario, Canada.
+                            
+                            <br />
+                            <br />
+                            I am an Electrical and Computer Engineering student at University of Waterloo. 
+                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I&apo;sm also pretty into photography, espically street photogrpahy.
                             
                             {/* <br /> */}
                             <br />
                            
                         </p>
-                        <a href="http://linkedin.com/in/raflymln" target={"_blank"} rel="noreferrer" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                            <button className="btn bg-theme-green-dark text-white mt-4" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                                <span className="bg-theme-green-light">Great, Now Tell Me More!</span>
+                        {/* <a href="https://www.linkedin.com/in/shuoni-xu-5b46821ba/" target={"_blank"} rel="noreferrer" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
+                            <button className="btn bg-green-500 text-white mt-4" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
+                                <span className="bg-green-300">Great, Now Tell Me More!</span>
                             </button>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 
