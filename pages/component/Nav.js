@@ -37,7 +37,7 @@ const Menu = () => {
     const menuList = [
         { title: "Home", href: "/" },
         { title: "About Me", href: "/#about" },
-        {title: "Resume", href: "https://github.com/sharonuu/sharonuu.github.io/blob/main/public/Shuoni_Xu.pdf"},
+        {title: "Resume", href: "https://github.com/sharonuu/sharonuu.github.io/blob/main/public/Resume.pdf"},
         { title: "Contact", href: "/#contact" },
     ];
   

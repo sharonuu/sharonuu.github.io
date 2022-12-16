@@ -6,10 +6,26 @@ import Image from "next/image";
 import Link from "next/link";
 import aboutme from "../public/images/about.png";
 import Footer from "./component/Footer"
+import { useEffect, useState } from "react";
+
 
 
 
 export default function Home() {
+  const [isOpen, setOpenState] = useState(false);
+
+    useEffect(() => {
+        const section = document.getElementById("about");
+
+        window.addEventListener("scroll", () => {
+            if (section && window.pageYOffset >= section.offsetHeight - section.offsetTop - 50) {
+                setOpenState(true);
+            } else {
+                setOpenState(false);
+            }
+        });
+    });
+
   return (
     <div>
       <Head>
@@ -53,15 +69,20 @@ export default function Home() {
                       
                     
                         <h1 className="font-baloo text-6xl" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
+                        {/* <AnimatedLetters
+                            letterClass={letterClass}
+                            strArray={['I', "'", 's', ' ', 'm', 'e', ' ', 'h','e','r','e']}
+                            idx={15}
+                          /> */}
                             It&apos;s me here
                         </h1>
                         <p className="font-comfortaa text-base font-regular leading-7" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                            I&apos;m Shuoni, you are also call me Sharon. Born and raised in China and currently live in Ontario, Canada.
+                            I&apos;m Shuoni, you can also call me Sharon. Borned and raised in China and currently live in Ontario, Canada.
                             
                             <br />
                             <br />
                             I am an Electrical and Computer Engineering student at University of Waterloo. 
-                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I&apo;sm also pretty into photography, espically street photogrpahy.
+                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I&apos;m also pretty into photography, espically street photogrpahy.
                             
                             {/* <br /> */}
                             <br />
@@ -76,7 +97,7 @@ export default function Home() {
                 </div>
                 
         </section>
-        <section id="contact" className="relative w-full bg-gradient-to-b from-theme-blue-medium to-theme-blue-dark">
+        <section id="contact" className="relative w-full ">
             <Footer />
         </section>
       </main>
