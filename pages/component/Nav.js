@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-// import {BsFillMoonStarsFill} from 'react-icons/bs';
 import Link from "next/link";
 import Logo from "../../public/images/logo.png"
 import Image from "next/image";
+
 
 const NavLink = ({ children, className, currentMenu, setCurrentMenu, currentPath, ...props }) => {
     if (setCurrentMenu) {
@@ -37,13 +37,16 @@ const Menu = () => {
     const menuList = [
         { title: "Home", href: "/" },
         { title: "About Me", href: "/#about" },
-        {title: "Resume", href: "https://github.com/sharonuu/sharonuu.github.io/blob/main/public/Resume.pdf"},
+        {title: "Project", href:"/#projects"},
+        {title: "Resume", href :"/Resume.pdf"},
         { title: "Contact", href: "/#contact" },
     ];
   
+
     return (
         <>
             {menuList.map((x, i) => (
+                
                 <NavLink key={i} href={x.href} currentMenu={currentMenu} setCurrentMenu={setCurrentMenu} currentPath={currentPath}>
                     {x.title}
                 </NavLink>
