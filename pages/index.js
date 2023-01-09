@@ -16,7 +16,7 @@ const Projects = () => {
           // image: "/images/projects/BRITONPlacementTest.webp",
           title: "EasyQ",
           description: "Online office hour queueing system",
-          technical: "Vue.js, HTML, CSS, BootStrap"
+          technical: ["Vue.js", "HTML", "CSS", "BootStrap"]
       },
       {
           href: "https://github.com/sharonuu/shortcuts",
@@ -82,7 +82,10 @@ const Projects = () => {
                           <h1 className="font-baloo text-4xl">{data.title}</h1>
                           <p className="font-comforta text-sm tracking-wider">{data.description}</p>
                       </div>
-                      <p className='rounded-lg font-somatic text-white'>{data.technical}</p>
+                      {/* <p className='rounded-lg font-somatic text-white'>{data.technical}</p>
+                      {item = data.technical.map((key, index) => 
+                      <p className='rounded-lg'>item</p>
+                      )} */}
                       {/* <p className='rounded-lg text-xs font-somatic px-5 py-2 bg-black bg-opacity-50 text-white tracking-widest' >{data.technical}</p> */}
                   </section>
                   
@@ -118,25 +121,34 @@ export default function Home() {
       </Head>
 
       <main className = "bg-white px-10">
-        <section id="intro" className = "min-h-screen">
+        <section id="intro" className = "min-h-screen relative w-full ">
           <Nav />
+          <div className='relative container w-full h-auto flex items-center z-[999] pt-14'>
+            
           
-          <div className='py-5 mx-40 w-full h-auto relative overflow-hidden mt-5 md:h-96 md:w-96 float-right'>
-            <Image src={my} />
+            <div className='text-left relative item-center container'>
+              <h1 className="heading py-10 text-4xl font-comfortaa">
+                  Hi There!{" "}
+                  <span className="wave">👋🏻</span>
+              </h1>
+              <h2 className='text-6xl py-2 text-yellow-500 font-baloo' data-aos="bounce">I&apos;m Shuoni Xu</h2>
+              <h3 className='text-2xl py-2 font-light font-comfortaa' data-aos="fadeIn">A full stack developer, designer and photographer.</h3>
+              <Link prefetch href="#about" passHref={true}>
+                <button className='btn bg-yellow-600 text-white mt-8  font-baloo' data-aos="fadeIn">
+                  <span className="bg-yellow-400 ">&quot;Who are you?&quot;</span>
+                </button>
+              </Link>
+              
+            </div>
+            <div className='w-auto h-full relative overflow-hidden mt-5 ml-10 pl-10 float-right'>
+                <Image src={my} />
+            </div>
+             
           </div>
-          <div className='text-left p-10 mx-40 relative item-center container'>
-            <h1 className="heading py-10 text-4xl font-comfortaa">
-                Hi There!{" "}
-                <span className="wave">👋🏻</span>
-            </h1>
-            <h2 className='text-6xl py-2 text-yellow-500 font-baloo' data-aos="bounce">I&apos;m Shuoni Xu</h2>
-            <h3 className='text-2xl py-2 font-light font-comfortaa' data-aos="fadeIn">A full stack developer, designer and photographer.</h3>
-            <Link prefetch href="#about" passHref={true}>
-              <button className='btn bg-yellow-600 text-white mt-8  font-baloo' data-aos="fadeIn">
-                <span className="bg-yellow-400 ">&quot;Who are you?&quot;</span>
-              </button>
-            </Link>
-          </div>
+
+          
+          
+          
           
           {/* <Aboutme /> */}
           
@@ -151,11 +163,6 @@ export default function Home() {
                       
                     
                         <h1 className="font-baloo text-6xl" data-aos="bounceInDown">
-                        {/* <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['I', "'", 's', ' ', 'm', 'e', ' ', 'h','e','r','e']}
-                            idx={15}
-                          /> */}
                             It&apos;s me here
                         </h1>
                         <p className="font-comfortaa text-base font-regular leading-7" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
