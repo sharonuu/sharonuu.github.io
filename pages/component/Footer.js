@@ -1,4 +1,7 @@
 import Link from "next/link"
+import Image from "next/image";
+import star from "../../public/images/star.gif"
+
 // import {AiFillGithub, AiFillLinkedin, AiFillInstagram} from 'react-icons/ai';
 
 
@@ -18,7 +21,11 @@ const SocialLink = ({ children, ...props }) => {
 export default function Footer() {
     return (
         // <section id="contact" className="relative w-full bg-gradient-to-b from-theme-blue-medium to-theme-blue-dark">
-        <footer id="footer" className="relative pt-40 md:pt-56 overflow-hidden">
+        <footer id="footer" className="relative overflow-hidden">
+        {/* <section id = "star" >
+            <Image src={star} className="rounded-full w-40 h-30"/>
+
+        </section> */}
         <section id="content" className=" w-full z-50">
                 <div className="relative container w-full h-full flex flex-col justify-end items-center z-50 mx-auto space-y-8 py-10">
                     {/* Work Inquiry */}

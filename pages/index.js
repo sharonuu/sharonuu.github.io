@@ -7,6 +7,11 @@ import Link from "next/link";
 import aboutme from "../public/images/about.png";
 import Footer from "./component/Footer"
 import { useEffect, useState } from "react";
+import star from "../public/images/star.gif"
+import cloud1 from "../public/images/cloud1.png"
+import cloud2 from "../public/images/cloud2.png"
+import cloud3 from "../public/images/cloud3.png"
+
 
 const Projects = () => {
   const ProjectList = [
@@ -154,7 +159,7 @@ export default function Home() {
           
         </section>
 
-        <section id="about" className='relative w-full py-32'>
+        <section id="about" className='relative w-full py-32 '>
         <div className="relative container w-full h-full flex flex-col xl:flex-row items-start xl:items-center space-y-10 xl:space-y-0 xl:space-x-10 justify-center z-50">
                     <div className='float-left mx-10'>
                         <Image src={aboutme} className="rounded-full" />
@@ -192,7 +197,7 @@ export default function Home() {
                 </div>
                 
         </section>
-        <section id="projects" className="relative w-full from-blue-200 to-blue-400 py-10">
+        <section id="projects" className="relative w-full from-blue-200 to-blue-400 py-10 ">
           <div className="relative container w-full h-full">
                 <section className="flex flex-row justify-between items-end">
                     <div className="text-blue-300 max-w-sm">
@@ -216,7 +221,13 @@ export default function Home() {
                 </section>
           </div>
         </section>
-        <section id="contact" className="relative w-full ">
+        <section id="contact" className="relative w-full  ">
+            {/* <section id = "cloud" >
+              
+              <Image src={cloud1} className="rounded-full w-60 relative left-20 top-20"/>
+              <Image src={cloud2} className="rounded-full w-60 relative top-30"/>
+
+            </section> */}
             <Footer />
         </section>
       </main>
