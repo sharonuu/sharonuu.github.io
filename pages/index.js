@@ -184,7 +184,7 @@ export default function Home() {
                         </p>
                         <Link prefetch href="#projects" passHref={true}>
                           <button className='btn bg-blue-600 text-white mt-8  font-baloo' data-aos="fadeIn">
-                            <span className="bg-blue-400 ">Wann learn me more</span>
+                            <span className="bg-blue-400 ">Wanna learn me more</span>
                           </button>
                         </Link>
 
