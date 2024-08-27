@@ -171,12 +171,12 @@ export default function Home() {
                             It&apos;s me here
                         </h1>
                         <p className="font-comfortaa text-base font-regular leading-7" data-aos="fadeIn" data-aos-anchor-placement="center-bottom">
-                            I&apos;m Shuoni, you can also call me Sharon. Borned and raised in China and currently live in Ontario, Canada.
+                            I&apos;m Shuoni, you can also call me Sharon. Born and raised in China and currently live in Ontario, Canada.
                             
                             <br />
                             <br />
                             I am an Electrical and Computer Engineering student at University of Waterloo. 
-                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I&apos;m also pretty into photography, espically street photogrpahy.
+                            Some of my interests include: web development, UI/UX design, the blockchain, automatic drive and many others. I&apos;m also pretty into photography, especially street photogrpahy.
                             
                             {/* <br /> */}
                             <br />
