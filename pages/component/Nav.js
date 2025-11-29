@@ -38,7 +38,7 @@ const Menu = () => {
         { title: "Home", href: "/" },
         { title: "About Me", href: "/#about" },
         {title: "Project", href:"/#projects"},
-        {title: "Resume", href :"/Resume.pdf"},
+        // {title: "Resume", href :"/Resume.pdf"},
         { title: "Contact", href: "/#contact" },
     ];
   
